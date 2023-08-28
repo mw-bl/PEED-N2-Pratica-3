@@ -52,6 +52,18 @@ class ArvoreBinaria:
             self.mostrar_pos_ordem_recursivo(no.direita)
         print(no.valor, end = " ")
 
+    def mostrar_em_ordem(self, no):
+        if no != None:
+            self.mostrar_em_ordem(no.esquerda)
+            self.mostrar_em_ordem(no.direita)
+            print(no.valor, end="")
+        
+    def mostrar_pos_ordem(self, no):
+        if no != None:
+            self.mostrar_pos_ordem(no.esquerda)
+            self.mostrar_pos_ordem(no.direita)
+            print(no.valor, end="")
+
 arvore = ArvoreBinaria()
 arvore.inserir_em_nivel(5)
 arvore.inserir_em_nivel(3)
@@ -60,4 +72,4 @@ arvore.inserir_em_nivel(2)
 arvore.inserir_em_nivel(4)
 arvore.inserir_em_nivel(6)
 arvore.inserir_em_nivel(8)
-arvore.mostrar_pre_ordem()
+arvore.mostrar_em_ordem(arvore.raiz)
