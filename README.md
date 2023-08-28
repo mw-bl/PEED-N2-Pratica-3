@@ -1,4 +1,4 @@
-# PEED-N2-Pratica-3
+# PEED Prática 3 N2
 
 ## Implemente um algoritmo para percorrer uma árvore para cada tipo de caminho:
 
